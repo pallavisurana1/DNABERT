@@ -179,7 +179,7 @@ In the following example,  we use DNABERT with kmer=6 as example. We use `prom-c
 cd examples
 
 export KMER=6
-export MODEL_PATH=PATH_TO_THE_PRETRAINED_MODEL
+export MODEL_PATH=/home/campus.stonybrook.edu/psurana/projects/dnabert_runs/DNABERT/6-new-12w-0
 export DATA_PATH=sample_data/ft/$KMER
 export OUTPUT_PATH=./ft/$KMER
 
@@ -207,7 +207,7 @@ python run_finetune.py \
     --n_process 8
 ```
 
-Add --fp16 tag if you want to perfrom mixed precision. (You have to install the 'apex' from source first).
+Add --fp16 tag if you want to perform mixed precision. (You have to install the 'apex' from source first).
 
 We also provide a model with `KMER=6` that is fine-tuned on the sample dataset for prediction/visulization/motif_analysis. If you use the fine-tuned model instead of fine-tuning a model by your self, please download the fine-tuned and put it under `examples/ft/6`. 
 
