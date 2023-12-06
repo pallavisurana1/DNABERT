@@ -181,7 +181,7 @@ cd examples
 export KMER=6
 export MODEL_PATH=/home/campus.stonybrook.edu/psurana/projects/dnabert_runs/DNABERT/6-new-12w-0
 export DATA_PATH=sample_data/ft/$KMER
-export OUTPUT_PATH=./ft/$KMER
+export OUTPUT_PATH=/home/campus.stonybrook.edu/psurana/projects/dnabert_runs/DNABERT/examples/ft_example_try
 
 python run_finetune.py \
     --model_type dna \
@@ -221,7 +221,7 @@ After the model is fine-tuned, we can get predictions by running
 
 ```$
 export KMER=6
-export MODEL_PATH=./ft/$KMER
+export MODEL_PATH=/home/campus.stonybrook.edu/psurana/projects/dnabert_runs/DNABERT/examples/ft_example_try
 export DATA_PATH=sample_data/ft/$KMER
 export PREDICTION_PATH=./result/$KMER
 
